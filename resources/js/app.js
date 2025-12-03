@@ -1,21 +1,20 @@
-import jQuery from "jquery";
-window.$ = window.jQuery = jQuery;
+// Load jQuery first
+import "./backend/jquery.min.js";
+window.$ = window.jQuery = $;
 
-import "./bootstrap";
+// Load Bootstrap JS
+import "./backend/bootstrap.min.js";
 
-import "./backend/bootstrap.min";
-import "./backend/bootstrap-select.min";
+// Load Bootstrap Select
+import "./backend/bootstrap-select.min.js";
 
-import "./backend/raphael.min";
-import "./backend/morris.min";
+// Other plugins
+import "./backend/raphael.min.js";
+import "./backend/morris.min.js";
 import "./backend/apexcharts/apexcharts";
-import "./backend/morris";
-
-import "./backend/jvectormap-1.2.2.min";
-import "./backend/jvectormap";
-import "./backend/jvectormap-us-lcc";
-
-import "./backend/zoom";
-import "./backend/sweetalert.min";
-
-import "./backend/main";
+import "./backend/jvectormap-1.2.2.min.js";
+import "./backend/jvectormap-us-lcc.js";
+import "./backend/jvectormap.js";
+import "./backend/sweetalert.min.js";
+import "./backend/zoom.js";
+import "./backend/main.js";

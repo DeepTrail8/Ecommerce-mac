@@ -7,17 +7,14 @@ export default defineConfig({
         laravel({
             input: [
                 "resources/js/app.js",
-                 "resources/css/app.css",
+                "resources/js/app.css",
                
                 //icons backend
                 "resources/icons/backend/favicon.ico",
                
               
                 //font frontend
-                "resources/font/frontend/SofiaProBold.woff",
-                
-              
-
+                "resources/font/frontend/SofiaProBold.woff",              
             ],
             refresh: true,
         }),
