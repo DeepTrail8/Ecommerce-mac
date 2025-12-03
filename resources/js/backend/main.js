@@ -43,14 +43,17 @@
       bt.on("click", function () {
         var args = { duration: 200 };
         if ($(this).hasClass("active")) {
+          console.log($(this));
           $(this).children(".sub-menu").slideUp(args);
           $(this).removeClass("active");
+      //  $(this).children(".sub-menu").slideToggle(args);
         } else {
           $(".sub-menu").slideUp(args);
           $(this).children(".sub-menu").slideDown(args);
           $(".menu-item.has-children").removeClass("active");
           $(this).addClass("active");
         }
+        
       });
       $('.sub-menu-item').on('click', function(event){
         event.stopPropagation();

@@ -1,20 +1,19 @@
-// Load jQuery first
-import "./backend/jquery.min.js";
-window.$ = window.jQuery = $;
+import jQuery from "jquery";
+window.$ = window.jQuery = jQuery;
 
-// Load Bootstrap JS
-import "./backend/bootstrap.min.js";
+/* Bootstrap core */
+import "./bootstrap.js";
 
-// Load Bootstrap Select
+/* Backend scripts */
+import "./backend/main.js";
 import "./backend/bootstrap-select.min.js";
 
-// Other plugins
-import "./backend/raphael.min.js";
-import "./backend/morris.min.js";
-import "./backend/apexcharts/apexcharts";
-import "./backend/jvectormap-1.2.2.min.js";
-import "./backend/jvectormap-us-lcc.js";
-import "./backend/jvectormap.js";
-import "./backend/sweetalert.min.js";
-import "./backend/zoom.js";
-import "./backend/main.js";
+/* Frontend scripts */
+import "./frontend/bootstrap.bundle.min.js";
+import "./frontend/swiper.min.js";
+import "./frontend/theme.js";
+
+/* Example global ready */
+$(function () {
+    console.log("Vite + Backend + Frontend Initialized Successfully");
+});

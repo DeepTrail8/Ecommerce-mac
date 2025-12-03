@@ -1,9 +1,17 @@
+/* ==== BACKEND ICON FONTS ==== */
+@import "../font/backend/fonts/fonts.css";
 
-@import "./backend/animate.min.css";
-@import "./backend/animation.css";
-@import "./backend/bootstrap-select.min.css";
+/* ==== BACKEND THEME ==== */
 @import "./backend/bootstrap.css";
 @import "./backend/style.css";
-@import "./backend/sweetalert.min.css";
 @import "./backend/custom.css";
+@import "./backend/animate.min.css";
+@import "./backend/sweetalert.min.css";
+@import "./backend/bootstrap-select.min.css";
+
+/* ==== FRONTEND STYLES ==== */
+@import "./frontend/style.css";
+@import "./frontend/custom.css";
+
+/* Slider */
 @import "./swiper.min.css";

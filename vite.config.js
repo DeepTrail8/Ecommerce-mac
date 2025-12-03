@@ -1,23 +1,17 @@
-import { defineConfig } from "vite";
-import laravel from "laravel-vite-plugin";
-import tailwindcss from "@tailwindcss/vite";
+    import { defineConfig } from "vite";
+    import laravel from "laravel-vite-plugin";
+    // import tailwindcss from "@tailwindcss/vite";
 
-export default defineConfig({
-    plugins: [
-        laravel({
-            input: [
-                "resources/js/app.js",
-                "resources/js/app.css",
-               
-                //icons backend
-                "resources/icons/backend/favicon.ico",
-               
+    export default defineConfig({
+        plugins: [
+            laravel({
+                input: [                   
+                        "resources/js/app.js",
+                        "resources/css/app.css",         
               
-                //font frontend
-                "resources/font/frontend/SofiaProBold.woff",              
-            ],
-            refresh: true,
-        }),
-        tailwindcss(),
-    ],
-});
+                      ],
+                refresh: true,
+            }),
+            // tailwindcss(),
+        ],
+    });
