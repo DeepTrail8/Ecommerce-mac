@@ -13,6 +13,9 @@ use App\Http\Controllers\Backend\UserController;
 use Illuminate\Support\Facades\Route;
 
 route::redirect('/','/dashboard');
+// route::get('/',function(){
+//     return view('welcome');
+// });
 //Home Controller
 Route::GET('/dashboard',[HomeController::class,'index'])->name('home.index'); 
 
